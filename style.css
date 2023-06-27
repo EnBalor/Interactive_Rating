@@ -48,6 +48,7 @@ section {
     font-weight: 100;
     margin-right: 40px;
     margin-bottom: 30px;
+    color: hsla(0, 0%, 100%, 0.664);
 }
 
 button {
@@ -60,11 +61,24 @@ button {
     background-color: hsl(211, 17%, 24%);
     font-size: 20px;
     line-height: 0;
+    color: hsla(0, 0%, 100%, 0.664);
 }
 
 button:hover {
     background-color: hsl(25, 97%, 53%);
     cursor: pointer;
+}
+
+button.active {
+    background-color: hsl(216, 12%, 54%);
+}
+
+button:active {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.click {
+    background-color: hsl(25, 97%, 53%);
 }
 
 .submit {
@@ -73,6 +87,7 @@ button:hover {
     width: 405px;
     border-radius: 50px;
     margin-top: 40px;
+    color: hsl(0, 0%, 100%);
 }
 
 .submit:hover {
@@ -115,6 +130,7 @@ button:hover {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
+    color: hsla(0, 0%, 100%, 0.664);
 }
 
 span {
