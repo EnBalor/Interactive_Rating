@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;600;700&display=swap');
+  </style>
+</head>
+<body>
+  <!-- Thank you state start -->
+  <section class="state">
+    <img src="images/illustration-thank-you.svg" alt="/">
+    <div class="selectNum">You selected&nbsp;<span id="ratingValue"></span>&nbsp;out of 5</div>
+
+    <h1 class="stateTitle">Thank you!</h1>
+  
+    <h2 class="stateSub">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</h2>
+  
+    <!-- Thank you state end -->
+  </section>
+  
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">En_Balor</a>.
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var ratingSpan = document.getElementById("ratingValue");
+      var selectedValue = localStorage.getItem("ratingValue");
+      ratingSpan.innerText = selectedValue;
+    })
+  </script>
+</body>
+</html>
